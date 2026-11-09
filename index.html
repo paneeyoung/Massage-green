@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sawasdeeka — Massage &amp; Bodywork, Amsterdam</title>
+<meta name="description" content="Clinical-grade therapeutic massage in a quiet emerald room. Deep tissue, hot stone and prenatal care in Amsterdam.">
+<meta property="og:title" content="Sawasdeeka — Massage &amp; Bodywork">
+<meta property="og:image" content="img/honey-emerald.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#06211c;color:#f5f1e6;font:300 15px/1.8 'Jost',system-ui,sans-serif}
+a{color:#c8a349;text-decoration:none}a:hover{color:#e2c98a}
+img{display:block;width:100%;height:100%;object-fit:cover}
+h1,h2,h3,p{margin:0}
+.wrap{max-width:1184px;margin:0 auto}
+.eb{font:400 11px/1.4 'Jost',sans-serif;letter-spacing:.34em;color:#c8a349;text-transform:uppercase}
+.eb.dk{color:#7d6019}
+.h2{font:300 46px/1.08 'Cormorant Garamond',serif;color:#f5f1e6;letter-spacing:.1em;text-transform:uppercase}
+.btn{display:inline-block;padding:16px 34px;background:#c8a349;color:#07251e;border:0;border-radius:2px;font:500 11px/1 'Jost',sans-serif;letter-spacing:.24em;text-transform:uppercase;cursor:pointer;transition:background .2s}
+.btn:hover{background:#e2c98a;color:#07251e}
+.btn.dk:hover{background:#b8912f}
+.btn.line{background:transparent;color:#d8bd79;border:1px solid rgba(200,163,73,.55)}
+.btn.line:hover{background:#c8a349;color:#07251e;border-color:#c8a349}
+.sh{display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center}
+.sh i{width:46px;height:1px;background:rgba(200,163,73,.6)}
+header{position:sticky;top:0;z-index:30;background:rgba(9,43,35,.94);backdrop-filter:blur(8px);border-bottom:1px solid rgba(200,163,73,.22)}
+.bar{display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:76px}
+.logo{display:flex;align-items:center;gap:12px;width:240px}
+.mono{width:34px;height:34px;flex:none;border:1px solid rgba(200,163,73,.6);border-radius:50%;display:flex;align-items:center;justify-content:center;font:500 13px/1 'Cormorant Garamond',serif;letter-spacing:.06em;color:#c8a349}
+.logo small{font:300 10px/1.5 'Jost',sans-serif;letter-spacing:.22em;color:rgba(247,244,236,.6);text-transform:uppercase}
+.brand{font:400 22px/1 'Cormorant Garamond',serif;letter-spacing:.34em;color:#f3efe4;text-transform:uppercase}
+.brand:hover{color:#f3efe4}
+.bar .r{width:240px;display:flex;justify-content:flex-end}
+.bar .btn{padding:13px 26px;font-size:10px}
+nav{display:flex;justify-content:center;gap:44px;height:46px;align-items:center;border-top:1px solid rgba(200,163,73,.14)}
+nav a{font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.26em;color:rgba(247,244,236,.78);text-transform:uppercase}
+nav a:hover{color:#c8a349}
+nav .btn{display:none}
+.burger{display:none;width:44px;height:44px;background:transparent;border:0;padding:0 10px;cursor:pointer;flex-direction:column;justify-content:center;gap:5px}
+.burger span{display:block;height:1px;background:#d8bd79}.burger span:last-child{width:60%}
+.hero{position:relative;padding:86px 48px 96px;background:radial-gradient(90% 120% at 78% 20%,#12483a 0%,#0a2e26 58%,#092b23 100%);overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(72deg,rgba(200,163,73,.09) 0 1px,transparent 1px 46px);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1fr 470px;gap:70px;align-items:center}
+.hero h1{margin-top:26px;font:300 68px/1.04 'Cormorant Garamond',serif;color:#f5f1e6;text-wrap:pretty}
+.hero h1 em{color:#d8bd79}
+.rule{width:64px;height:1px;background:rgba(200,163,73,.6);margin:32px 0 24px}
+.lead{max-width:440px;font-size:15.5px;color:rgba(247,244,236,.74);text-wrap:pretty}
+.cta{display:flex;align-items:center;flex-wrap:wrap;gap:22px;margin-top:40px}
+.cta .tx{font:400 11px/1 'Jost',sans-serif;letter-spacing:.2em;color:rgba(247,244,236,.72);text-transform:uppercase;border-bottom:1px solid rgba(200,163,73,.45);padding-bottom:5px}
+.stats{display:flex;gap:38px;margin-top:56px}
+.stats b{display:block;font:400 30px/1 'Cormorant Garamond',serif;color:#d8bd79}
+.stats span{display:block;margin-top:8px;font:300 10px/1.3 'Jost',sans-serif;letter-spacing:.22em;color:rgba(247,244,236,.72);text-transform:uppercase}
+.stats u{width:1px;background:rgba(200,163,73,.2)}
+.arch{position:relative;justify-self:end}
+.arch:before{content:"";position:absolute;inset:-16px;border:1px solid rgba(200,163,73,.35);border-radius:250px 250px 6px 6px;pointer-events:none}
+.arch .im{position:relative;width:436px;height:556px;border-radius:218px 218px 4px 4px;overflow:hidden}
+.arch .dm{position:absolute;top:190px;width:9px;height:9px;background:#c8a349;transform:rotate(45deg)}
+.approach{background:#092b23;padding:0 48px 110px}
+.approach .wrap{position:relative}
+.card{margin-left:150px;background:#f7f4ec;padding:72px 80px 72px 260px;border-radius:2px;box-shadow:0 40px 80px -40px rgba(0,0,0,.55)}
+.card h2{margin-top:20px;font:300 44px/1.12 'Cormorant Garamond',serif;color:#123a30;letter-spacing:.01em;text-transform:uppercase}
+.card p{margin-top:26px;max-width:490px;font-size:14.5px;line-height:1.85;color:rgba(18,58,48,.76);text-wrap:pretty}
+.card .btn{margin-top:34px}
+.frame{position:absolute;left:32px;top:-44px;width:296px;height:392px;border:1px solid rgba(200,163,73,.55);padding:10px;border-radius:158px 158px 4px 4px;background:#0a3129}
+.frame div{height:100%;border-radius:148px 148px 3px 3px;overflow:hidden}
+.treat{background:#0a2e26;padding:96px 48px 104px;border-top:1px solid rgba(200,163,73,.14)}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+.svc{border:1px solid rgba(200,163,73,.34);background:rgba(247,244,236,.03);padding:16px 16px 30px;transition:.25s}
+.svc:hover{border-color:rgba(200,163,73,.72);background:rgba(247,244,236,.055)}
+.svc .ph{height:200px;overflow:hidden}
+.svc .bd{padding:0 14px}
+.svc h3{margin-top:26px;font:400 14px/1.3 'Jost',sans-serif;letter-spacing:.24em;color:#d8bd79;text-transform:uppercase}
+.svc p{margin-top:14px;font-size:14px;line-height:1.8;color:rgba(247,244,236,.7)}
+.price{display:flex;justify-content:space-between;align-items:baseline;margin-top:22px;padding-top:16px;border-top:1px solid rgba(200,163,73,.2)}
+.price span{font:300 11px/1 'Jost',sans-serif;letter-spacing:.16em;color:rgba(247,244,236,.76);text-transform:uppercase}
+.price b{font:400 20px/1 'Cormorant Garamond',serif;color:#c8a349}
+.rev{background:#06211c;padding:96px 48px 104px}
+.q{border:1px solid rgba(200,163,73,.3);padding:38px 34px;display:flex;flex-direction:column;gap:20px}
+.q>span{font:400 34px/1 'Cormorant Garamond',serif;color:rgba(200,163,73,.55)}
+.q p{font:italic 300 18px/1.7 'Cormorant Garamond',serif;color:rgba(247,244,236,.86)}
+.q div{margin-top:auto;display:flex;flex-direction:column;gap:8px}
+.q b{font:400 12px/1 'Jost',sans-serif;letter-spacing:.16em;color:#d8bd79;text-transform:uppercase}
+.q em{font-style:normal;letter-spacing:.3em;color:#c8a349;font-size:11px}
+.gal{background:#0a2e26;padding:84px 48px 90px;border-top:1px solid rgba(200,163,73,.14)}
+.gal .hd{display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+.gal .h2{margin-top:16px;font-size:42px}
+.gal .hd p{max-width:340px;font-size:14px;color:rgba(247,244,236,.7)}
+.mos{display:grid;grid-template-columns:1.25fr 1fr 1fr;grid-template-rows:200px 200px;gap:18px;margin-top:44px}
+.mos div{overflow:hidden}.mos .a{grid-row:span 2}.mos .d{grid-column:span 2}
+.about{background:#f7f4ec;padding:84px 48px}
+.about .wrap{max-width:1100px;display:grid;grid-template-columns:340px 1fr;gap:70px;align-items:center}
+.pf{width:340px;height:430px;border:1px solid rgba(168,132,47,.5);padding:10px;border-radius:180px 180px 4px 4px}
+.pf div{height:100%;border-radius:170px 170px 3px 3px;overflow:hidden}
+.about h2{margin-top:18px;font:300 42px/1.1 'Cormorant Garamond',serif;color:#123a30;letter-spacing:.06em;text-transform:uppercase}
+.about p{margin-top:24px;font-size:14.5px;line-height:1.85;color:rgba(18,58,48,.78);text-wrap:pretty}
+.about p+p{margin-top:16px;color:rgba(18,58,48,.7)}
+.about .btn{margin-top:32px}
+.contact{background:#0a2e26;padding:90px 48px 96px}
+.contact .wrap{max-width:1100px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.contact .h2{margin-top:18px;font-size:44px;letter-spacing:.08em}
+.intro{margin-top:22px;max-width:400px;font-size:14.5px;color:rgba(247,244,236,.72)}
+.info{display:flex;flex-direction:column;gap:22px;margin-top:40px}
+.info small{display:block;margin-bottom:4px;font:300 10px/1.4 'Jost',sans-serif;letter-spacing:.24em;color:rgba(247,244,236,.72);text-transform:uppercase}
+.info span{font-size:14.5px;line-height:1.6;color:rgba(247,244,236,.88)}
+form{border:1px solid rgba(200,163,73,.32);padding:38px 36px;display:flex;flex-direction:column;gap:18px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+input,textarea{width:100%;background:transparent;border:1px solid rgba(200,163,73,.3);color:#f5f1e6;padding:14px;font:300 14px/1.5 'Jost',sans-serif;letter-spacing:.04em;border-radius:2px;outline:none}
+input:focus,textarea:focus{border-color:rgba(200,163,73,.8)}
+input::placeholder,textarea::placeholder{color:rgba(247,244,236,.5)}
+textarea{resize:none}
+form .btn{align-self:flex-start;margin-top:6px}
+.ok{display:none;color:#d8bd79;font-size:14px}
+footer{background:#06211c;border-top:1px solid rgba(200,163,73,.18);padding:38px 48px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+footer .brand{font-size:14px;letter-spacing:.32em;color:rgba(245,241,230,.82)}
+footer span{font:300 10.5px/1.4 'Jost',sans-serif;letter-spacing:.18em;color:rgba(247,244,236,.72);text-transform:uppercase}
+@media(max-width:1020px){
+.bar{padding:0 20px;height:68px}.logo{display:none}.brand{font-size:16px;letter-spacing:.3em}
+.bar .r{width:44px}.bar .r .btn{display:none}.burger{display:flex}
+.bar .r:after{content:"SK";width:28px;height:28px;margin:8px;border:1px solid rgba(200,163,73,.6);border-radius:50%;display:flex;align-items:center;justify-content:center;font:500 10px/1 'Cormorant Garamond',serif;color:#c8a349}
+nav{display:none;flex-direction:column;height:auto;align-items:stretch;gap:0;padding:10px 26px 30px;background:rgba(6,33,28,.98)}
+nav.open{display:flex}
+nav a{padding:18px 0;font:300 24px/1 'Cormorant Garamond',serif;letter-spacing:.1em;color:#f3efe4;border-bottom:1px solid rgba(200,163,73,.18)}
+nav .btn{display:block;margin-top:24px;text-align:center;padding:18px;font:500 11px/1 'Jost',sans-serif;border:0;color:#07251e}
+.hero{padding:40px 26px 52px}.hero .wrap{grid-template-columns:1fr;gap:44px}.hero h1{font-size:46px;margin-top:20px}
+.arch{justify-self:center;width:calc(100% - 32px);max-width:400px}.arch .im{width:100%;height:auto;aspect-ratio:436/556}
+.arch .dm{display:none}
+.cta .btn{width:100%;text-align:center;padding:19px}
+.stats{gap:0;justify-content:space-between;margin-top:36px;padding-top:24px;border-top:1px solid rgba(200,163,73,.18)}.stats u{display:none}.stats b{font-size:24px}
+.approach{padding:0 0 56px}.approach .wrap{display:flex;flex-direction:column}
+.card{margin:0;padding:46px 26px 52px}.card h2{font-size:32px}
+.frame{position:relative;left:auto;top:auto;width:calc(100% - 52px);max-width:340px;height:280px;margin:-24px auto 0;border-radius:150px 150px 4px 4px}
+.frame div{border-radius:140px 140px 3px 3px}
+.treat,.rev,.gal,.about,.contact{padding:52px 26px 56px}
+.h2{font-size:34px}.grid3{grid-template-columns:1fr;gap:18px}
+.svc .ph{height:170px}
+.gal .hd{flex-direction:column;align-items:flex-start;gap:16px}.gal .h2{font-size:30px}
+.mos{grid-template-columns:1fr 1fr;grid-template-rows:150px 150px 150px;gap:12px}.mos .a{grid-row:span 1}
+.about .wrap{grid-template-columns:1fr;gap:36px}.pf{margin:0 auto;width:100%;max-width:320px;height:400px}.about h2{font-size:32px}
+.contact .wrap{grid-template-columns:1fr;gap:40px}.contact .h2{font-size:32px}
+form{padding:24px 20px}.two{grid-template-columns:1fr}form .btn{align-self:stretch;padding:19px}
+footer{flex-direction:column;padding:32px 26px 44px;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="bar">
+<div class="logo"><span class="mono">SK</span><small>Massage<br>&amp; Bodywork</small></div>
+<button class="burger" type="button" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')"><span></span><span></span><span></span></button>
+<a class="brand" href="#top">Sawasdeeka</a>
+<div class="r"><a class="btn" href="#contact">Book a session</a></div>
+</div>
+<nav id="nav">
+<a href="#treatments">Treatments</a>
+<a href="#studio">The Studio</a>
+<a href="#reviews">Client Love</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+<a class="btn" href="#contact">Book a session</a>
+</nav>
+</header>
+
+<main id="top">
+
+<section class="hero">
+<div class="wrap">
+<div>
+<span class="eb">Signature massage · Amsterdam</span>
+<h1>Deep rest,<br>expertly<em> crafted</em></h1>
+<div class="rule"></div>
+<p class="lead">Clinical-grade therapeutic massage in a quiet emerald room. Ninety-minute sessions built around your body's actual pattern of tension — not a script.</p>
+<div class="cta">
+<a class="btn" href="#contact">View availability</a>
+<a class="tx" href="#treatments">Our treatments</a>
+</div>
+<div class="stats">
+<div><b>11 yrs</b><span>In practice</span></div><u></u>
+<div><b>4.97</b><span>840 reviews</span></div><u></u>
+<div><b>6</b><span>Therapists</span></div>
+</div>
+</div>
+<div class="arch">
+<div class="im"><img src="img/honey-emerald.jpeg" alt="Honey ritual in the emerald room"></div>
+<span class="dm" style="left:-24px"></span><span class="dm" style="right:-24px"></span>
+</div>
+</div>
+</section>
+
+<section class="approach" id="studio">
+<div class="wrap">
+<div class="card">
+<span class="eb dk">The approach</span>
+<h2>Quiet the nervous<br>system first</h2>
+<p>Every session opens with a ten-minute assessment: breath, posture, the places you hold. Pressure, oils and heat are chosen from there. You leave with two things to do at home — never a sales pitch.</p>
+<a class="btn dk" href="#about">Meet the team</a>
+</div>
+<div class="frame"><div><img src="img/room-tray.jpeg" alt="Treatment room"></div></div>
+</div>
+</section>
+
+<section class="treat" id="treatments">
+<div class="wrap">
+<div class="sh"><span class="eb">Signature menu</span><h2 class="h2">Treatments</h2><i></i></div>
+<div class="grid3" style="margin-top:56px">
+<article class="svc"><div class="ph"><img src="img/deep-tissue.jpeg" alt="Deep tissue massage" loading="lazy"></div><div class="bd">
+<h3>Deep Tissue</h3>
+<p>Slow, weighted pressure through the layers that hold desk tension — shoulders, neck, hips.</p>
+<div class="price"><span>60 / 90 min</span><b>€110</b></div></div></article>
+<article class="svc"><div class="ph"><img src="img/hot-stone.jpeg" alt="Hot stone ritual" loading="lazy"></div><div class="bd">
+<h3>Hot Stone Ritual</h3>
+<p>Heated basalt and slow effleurage. For the weeks when nothing has let go on its own.</p>
+<div class="price"><span>90 min</span><b>€150</b></div></div></article>
+<article class="svc"><div class="ph"><img src="img/gentle-massage.jpeg" alt="Prenatal massage" loading="lazy"></div><div class="bd">
+<h3>Prenatal Care</h3>
+<p>Side-lying and fully bolstered, from the second trimester. Delivered by certified therapists.</p>
+<div class="price"><span>60 min</span><b>€120</b></div></div></article>
+</div>
+<div style="display:flex;justify-content:center;margin-top:52px"><a class="btn line" href="#contact">Full treatment menu</a></div>
+</div>
+</section>
+
+<section class="rev" id="reviews">
+<div class="wrap">
+<div class="sh"><span class="eb">In their words</span><h2 class="h2">Client love</h2><i></i></div>
+<div class="grid3" style="margin-top:52px">
+<div class="q"><span>&ldquo;</span><p>Three physios and a year of stretching did less than two sessions here. I sleep again.</p><div><b>Naomi F.</b><em>★★★★★</em></div></div>
+<div class="q"><span>&ldquo;</span><p>The room is so quiet you forget the street exists. Rare to find real skill and real calm together.</p><div><b>Priya R.</b><em>★★★★★</em></div></div>
+<div class="q"><span>&ldquo;</span><p>Booked the membership after one visit. My marathon training has never felt this maintained.</p><div><b>Tom A.</b><em>★★★★★</em></div></div>
+</div>
+</div>
+</section>
+
+<section class="gal">
+<div class="wrap">
+<div class="hd">
+<div><span class="eb">The room</span><h2 class="h2">Inside Sawasdeeka</h2></div>
+<p>Linen warmed before the session, oils blended on the morning, one candle lit per hour.</p>
+</div>
+<div class="mos">
+<div class="a"><img src="img/green-towel.jpeg" alt="Oils and linen" loading="lazy"></div>
+<div><img src="img/table-candles.jpeg" alt="Candlelit table" loading="lazy"></div>
+<div><img src="img/towels-stones.jpeg" alt="Stones and towels" loading="lazy"></div>
+<div class="d"><img src="img/mood-grid.jpeg" alt="Studio details" loading="lazy"></div>
+</div>
+</div>
+</section>
+
+<section class="about" id="about">
+<div class="wrap">
+<div class="pf"><div><img src="img/portrait-neck.jpeg" alt="Studio portrait" loading="lazy"></div></div>
+<div>
+<span class="eb dk">Est. 2014</span>
+<h2>About the studio</h2>
+<p>Sawasdeeka began as one treatment room above a florist on the Prinsengracht. Eleven years later it is six therapists, all clinically trained, all still working to the same rule: one body at a time, unhurried.</p>
+<p>We keep a single appointment on the hour so the room is never rushed between clients, and we never upsell from the table.</p>
+<a class="btn dk" href="#contact">Read our story</a>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="wrap">
+<div>
+<span class="eb">Bookings &amp; enquiries</span>
+<h2 class="h2">Visit the studio</h2>
+<p class="intro">Same-week appointments are usually available. For gift cards or corporate bookings, send a note and we reply within a day.</p>
+<div class="info">
+<div><small>Address</small><span>Prinsengracht 42<br>1015 DV Amsterdam</span></div>
+<div><small>Hours</small><span>Mon–Fri 8–21 · Sat 9–18<br>Sunday by appointment</span></div>
+<div><small>Contact</small><span>+31 20 794 6041 · <a href="mailto:hello@sawasdeeka.co">hello@sawasdeeka.co</a></span></div>
+</div>
+</div>
+<form name="booking" method="POST" action="/?thanks=1#contact" data-netlify="true" netlify-honeypot="bot-field">
+<input type="hidden" name="form-name" value="booking">
+<p style="display:none"><label>Don't fill this out <input name="bot-field"></label></p>
+<div class="two">
+<input type="text" name="first_name" placeholder="First name" required aria-label="First name">
+<input type="text" name="last_name" placeholder="Last name" aria-label="Last name">
+</div>
+<input type="email" name="email" placeholder="Email address" required aria-label="Email address">
+<input type="text" name="treatment" placeholder="Treatment of interest" aria-label="Treatment of interest">
+<textarea name="message" rows="4" placeholder="Anything we should know — injuries, pressure preference, timing" aria-label="Message"></textarea>
+<button class="btn" type="submit">Request booking</button>
+<p class="ok" id="ok">Thank you — we've received your request and will reply within a day.</p>
+</form>
+</div>
+</section>
+
+</main>
+
+<footer>
+<span class="brand">Sawasdeeka</span>
+<span>© 2026 · Amsterdam</span>
+</footer>
+
+<script>
+if(location.search.indexOf('thanks=1')>-1)document.getElementById('ok').style.display='block';
+document.querySelectorAll('#nav a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('nav').classList.remove('open')})});
+</script>
+</body>
+</html>
